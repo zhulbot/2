@@ -226,7 +226,7 @@ while True:
      /  / /\ \   __  \ \  \\\  \ \  \       
     /  /_/__\ \  \ \  \ \  \\\  \ \  \____  
    |\________\ \__\ \__\ \_______\ \_______\
-    \|_______|\|__|\|__|\|_______|\|_______|
+      \|_______|\|__|\|__|\|_______|\|_______|
 """, width=47, title="Version 2.5", style="bold white")) # Recode By ZhuL
     try:
         token = json.loads(open('Data/Token.json', 'r').read())['Token']
