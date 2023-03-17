@@ -259,11 +259,7 @@ class crack:
                     self.password.append(nama + '12345')
                     self.password.append(nama + '123456')
                     self.password.append('kontol')
-                    self.password.append('anjing')
-                    self.password.append('sayang')
-                    self.password.append('indonesia')
-                    self.password.append('12345678')
-                    self.password.append('iloveyou')
+                    self.password.append('rahasia')
             else:
                 if len(nama) < 3:
                     self.password.append(name)
@@ -273,12 +269,8 @@ class crack:
                     self.password.append(nama + '1234')
                     self.password.append(nama + '12345')
                     self.password.append(nama + '123456')
-                    self.password.append('kontol')
-                    self.password.append('anjing')
+                    self.password.append('rahasia')
                     self.password.append('sayang')
-                    self.password.append('indonesia')
-                    self.password.append('12345678')
-                    self.password.append('iloveyou')
         self.password_ = []
         for z in self.password:
             if str(z) in str(self.password_):
