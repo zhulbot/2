@@ -258,7 +258,7 @@ class crack:
                     self.password.append(nama + '1234')
                     self.password.append(nama + '12345')
                     self.password.append(nama + '123456')
-                    self.password.append('kontol')
+                    self.password.append('sayang')
                     self.password.append('rahasia')
             else:
                 if len(nama) < 3:
